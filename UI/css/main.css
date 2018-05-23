@@ -1,7 +1,10 @@
 body{
-    background-color: azure
-}
-.nav-bar {
+    background-color: white;
+    font-family: 'Bad Script';
+    font-size: 22px;
+ }
+
+ .nav-bar {
     top: 10;
     width: 99%;
     background-color: rgba(44, 14, 14, 0.932);
@@ -77,6 +80,60 @@ li a:hover {
         border-right: 0px;
         /* border-bottom: 1px solid #bbb; */
     }
+    div.flex-container>div{
+        width:400px;
+        height:40%;
+        
+    }
 
+}
+@media screen and (max-width:450px){
+    div.flex-container>div{
+        width:80%;
+        height:40%;
+    }
+}
+@media screen and (max-width:380px){
+    div.flex-container>div{
+        width:80%;
+        height:30%;
+    }
+}
 
+.flex-container{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 50%;
+    align-items: baseline;
+    align-content: center;
+     
+}
+.flex-container>div{
+    background-color: darkgray;
+    width:70%;
+    margin: 10px;
+    text-align: center;
+    background-image: url("maintenance2.jpg")
+
+   
+}
+.flex-container.banner{
+    height: 7%;
+}
+.flex-container.footer{
+    height: 7%;
+    align-content: flex-end;
+    justify-content: last baseline;
+    background-color: aqua;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.flex-container.login{
+    text-decoration-color: aliceblue;
+    height: 10%;
 }
