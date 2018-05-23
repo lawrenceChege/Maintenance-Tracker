@@ -1,0 +1,82 @@
+body{
+    background-color: azure
+}
+.nav-bar {
+    top: 10;
+    width: 99%;
+    background-color: rgba(44, 14, 14, 0.932);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;    
+}
+.nav-bar>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+    
+}
+
+.nav-bar>ul>li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+.nav-bar>ul>li>a {
+    display: block;
+    color: rgb(247, 243, 243);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-bar-right{
+   float: right;
+}
+.nav-bar-right>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    
+   
+}
+.nav-bar-right>ul>li{
+    display: inline;
+    text-align: center;
+    border-right: 1px solid rgba(252, 249, 249, 0.952);
+
+}
+.nav-bar-right>ul>li>a{
+    display: inline-flex;
+    color: rgb(247, 243, 243);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active {
+    background-color: rgb(24, 202, 233);
+}
+li a:hover {
+    background-color: #111;
+}
+@media screen and (max-width:600px){
+    div.nav-bar-right,
+    div.nav-bar-right>ul>li,
+    div.nav-bar-right>ul>li>a
+    {    
+        display:block;
+        float: left;
+    }
+    nav.nav-bar{
+        width:auto;
+        min-height:auto; 
+    }
+    nav.nav-bar>ul>li,
+    div.nav-bar-right>ul>li
+    {
+        border-right: 0px;
+        /* border-bottom: 1px solid #bbb; */
+    }
+
+
+}
