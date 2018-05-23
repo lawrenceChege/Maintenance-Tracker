@@ -2,6 +2,8 @@ body{
     background-color: white;
     font-family: 'Bad Script';
     font-size: 22px;
+    background-repeat: no-repeat;
+    background-image: url(../Images/maintenance.jpg);
  }
 
  .nav-bar {
@@ -115,9 +117,17 @@ li a:hover {
     width:70%;
     margin: 10px;
     text-align: center;
-    background-image: url("maintenance2.jpg")
-
-   
+    color:rgb(12, 12, 12);
+    background-image: url(../Images/maintenance2.jpg);
+    opacity: 0.8;
+}
+.flex-container>div>p{
+    background-color: rgba(169, 169, 169, 0.445);
+    
+}
+.flex-container>div>h4{
+    background-color: rgba(169, 169, 169, 0.445);
+    
 }
 .flex-container.banner{
     height: 7%;
@@ -126,14 +136,11 @@ li a:hover {
     height: 7%;
     align-content: flex-end;
     justify-content: last baseline;
-    background-color: aqua;
+    background-color:rgb(243, 202, 21);
+    opacity: 0.5;
 }
 .footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-.flex-container.login{
-    text-decoration-color: aliceblue;
-    height: 10%;
 }
