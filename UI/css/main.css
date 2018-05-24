@@ -6,7 +6,7 @@ body{
     background-image: url(../Images/maintenance.jpg);
  }
 /* navigation bar*/ 
- .nav-bar {
+.nav-bar {
     top: 10;
     width: 99%;
     background-color: rgba(44, 14, 14, 0.74);
