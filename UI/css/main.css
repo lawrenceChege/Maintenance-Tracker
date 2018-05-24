@@ -159,7 +159,7 @@ input[type=submit]{
     z-index: 1;
     top: 15;
     left: 0;
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.671);
     overflow-x: hidden;
     padding-top: 20px;
 }
