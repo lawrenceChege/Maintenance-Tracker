@@ -105,6 +105,9 @@ li a:hover {
     margin-top: 10px;
     
 }
+.flex-container>form :hover{
+    background-color: black;
+}
 /*flex-box*/
 .banner{
     max-height: 7%;
@@ -148,8 +151,42 @@ input[type=submit]{
     cursor: pointer;
     float: right;
 }/*Input methods */
+/*The sidebar*/
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 15;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: rgba(252, 249, 249, 0.952);
+    display: block;
+}
+.sidenav a:hover {
+    color: azure;
+}
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
 
+/*The sidebar*/
 /* media queries*/ 
+@media screen and (max-height:450px){
+    .sidenav{
+        padding-top: 15px;
+    }
+    .sidenav a{
+        font-size: 18px;
+    }
+}
 @media screen and (max-width:1000px){
     div.flex-container>form{
         width:40%;
