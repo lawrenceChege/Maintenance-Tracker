@@ -18,7 +18,7 @@
         <nav class="nav-bar">
             <ul>
                 <li><a href="#">Maintenance Tracker</a></li>
-                <li><a class="active" href="user-dashboard.html"><i class="fa fa-cloud"></i>
+                <li><a  href="user-dashboard.html"><i class="fa fa-cloud"></i>
                         Dashboard </a></li>                              
                 <div class="nav-bar-right">
                     <ul>
@@ -70,16 +70,16 @@
                         <label for="title"> Title</label>
                     </div> 
                     <div class="form-input">
-                        <input type="text" id="title" placeholder=" Enter Request title or subject">
+                        <input type="text" id="title" placeholder=" Enter Request title or subject" required>
                     </div>                    
                     <div class="form-label">
                         <label for="description"> Description</label>
                     </div> 
                     <div class="form-input">
-                        <textarea name="message" style="width:100%; height:240px;">
-                            Describe Your request here</textarea>
-                    </div><br>                
-                    <input type="submit" value="Submit">           
+                        <textarea name="message" style="width:100%;" rows="7"
+                           placeholder="Describe Your request here" required></textarea>
+                    </div>               
+                    <input type="submit" value="Create Request">           
     
             </form>
         </div>
