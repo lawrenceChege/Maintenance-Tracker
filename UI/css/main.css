@@ -5,7 +5,7 @@ body{
     background-repeat: no-repeat;
     background-image: url(../Images/maintenance.jpg);
  }
-
+/* navigation bar*/ 
  .nav-bar {
     top: 10;
     width: 99%;
@@ -61,6 +61,104 @@ body{
 li a:hover {
     background-color: #111;
 }
+/* navigation bar*/
+/*flex-box*/
+.flex-container{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 50%;
+    align-items: baseline;
+    align-content: center; 
+     
+}
+.flex-container>div{
+    background-color: darkgray;
+    width:70%;
+    margin: 10px;
+    text-align: center;
+    color:rgb(12, 12, 12);
+    background-image: url(../Images/maintenance2.jpg);
+    opacity: 0.8;
+}
+.flex-container>div>p{
+    background-color: rgba(169, 169, 169, 0.76);
+    
+}
+.flex-container>div>h4{
+    background-color: rgba(169, 169, 169, 0.445);
+    
+}
+.flex-container.footer{
+    height: 7%;
+    align-content: flex-end;
+    justify-content: center;
+    background-color:rgb(243, 202, 21);
+    opacity: 0.5;
+}
+.flex-container>form{
+    background-color: rgba(192, 183, 183, 0.562);
+    display: table;
+    width: 30%;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+/*flex-box*/
+.banner{
+    max-height: 7%;
+    text-align: center;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*form Input methods */
+input[type=text]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=email]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=password]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=submit]{
+    width: 50%;
+    background-color: rgb(243, 202, 21);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}/*Input methods */
+
+/* media queries*/ 
+@media screen and (max-width:1000px){
+    div.flex-container>form{
+        width:40%;
+    }
+    input[type=text]{
+        width: 40%;
+    }    
+}
+
 @media screen and (max-width:600px){
     div.nav-bar-right,
     div.nav-bar-right>ul>li,
@@ -92,6 +190,15 @@ li a:hover {
     }   
 
 }
+@media screen and (max-width:500px){
+    div.flex-container>form{
+        width:50%;
+    }
+    input[type=text]{
+        width: 50%;
+    }    
+    
+}
 @media screen and (max-width:450px){
     div.flex-container>div{
         width:80%;
@@ -117,105 +224,4 @@ li a:hover {
     }
      
 }
-@media screen and (max-width:1000px){
-    div.flex-container>form{
-        width:40%;
-    }
-    input[type=text]{
-        width: 40%;
-    }    
-}
-@media screen and (max-width:500px){
-    div.flex-container>form{
-        width:50%;
-    }
-    input[type=text]{
-        width: 50%;
-    }    
-    
-}
-
-
-.flex-container{
-    display: flex;
-    display: -webkit-flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    /* height: 50%; */
-    /* align-items: baseline;
-    align-content: center; */
-     
-}
-.flex-container>div{
-    background-color: darkgray;
-    width:70%;
-    margin: 10px;
-    text-align: center;
-    color:rgb(12, 12, 12);
-    background-image: url(../Images/maintenance2.jpg);
-    opacity: 0.8;
-}
-.flex-container>div>p{
-    background-color: rgba(169, 169, 169, 0.76);
-    
-}
-.flex-container>div>h4{
-    background-color: rgba(169, 169, 169, 0.445);
-    
-}
-.banner{
-    max-height: 7%;
-    text-align: center;
-}
-.flex-container.footer{
-    height: 7%;
-    align-content: flex-end;
-    justify-content: center;
-    background-color:rgb(243, 202, 21);
-    opacity: 0.5;
-}
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.flex-container>form{
-    background-color: rgba(192, 183, 183, 0.562);
-    display: table;
-    width: 30%;
-    align-items: center;
-    margin-top: 10px;
-    
-}
-input[type=text]{
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-input[type=email]{
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-input[type=password]{
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-input[type=submit]{
-    width: 50%;
-    background-color: rgb(243, 202, 21);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-  
+/* media queries*/ 
