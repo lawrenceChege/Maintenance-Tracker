@@ -12,7 +12,7 @@ body{
     background-color: rgba(44, 14, 14, 0.74);
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    p    
+      
 }
 .nav-bar>ul {
     list-style-type: none;
@@ -21,7 +21,6 @@ body{
     overflow: hidden;    
     
 }
-
 .nav-bar>ul>li {
     float: left;
     border-right: 1px solid #bbb;
@@ -118,7 +117,7 @@ li a:hover {
     
 }
 .newreq>form{
-    background-color: rgba(80, 94, 94, 0.473);
+    background-color: rgba(80, 94, 94, 0.863);
     width: 90%;
     margin-left: 40px;
     display: table;
@@ -171,7 +170,7 @@ input[type=password]{
 }
 input[type=submit]{
     width: 50%;
-    background-color: rgb(243, 202, 21);
+    background-color: rgb(21, 180, 243);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -198,11 +197,18 @@ input[type=submit]{
     display: block;
 }
 .sidenav a:hover {
-    color: azure;
+    color: rgb(9, 245, 245);
+}
+.sidenav a:active {
+    color: rgb(9, 245, 245);
+    background-color: white;
 }
 .main {
     margin-left: 12%;
     padding: 0px 10px;
+}
+#h4{
+    text-align: center;
 }
 
 /*The sidebar*/
