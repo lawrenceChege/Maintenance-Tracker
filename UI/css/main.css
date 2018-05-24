@@ -41,9 +41,6 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
-    
-   
 }
 .nav-bar-right>ul>li{
     display: inline;
@@ -87,6 +84,12 @@ li a:hover {
         height:40%;
         
     }
+    div.flex-container>form{
+        width:60%;
+    }
+    input[type=text]{
+        width: 60%;
+    }   
 
 }
 @media screen and (max-width:450px){
@@ -94,13 +97,43 @@ li a:hover {
         width:80%;
         height:40%;
     }
+    div.flex-container>form{
+        width:70%;
+    }
+    div>input[type=text]{
+        width: 70%;
+    }   
 }
 @media screen and (max-width:380px){
     div.flex-container>div{
         width:80%;
         height:30%;
     }
+    div.flex-container>form{
+        width:90%;
+    }
+    input[type=text]{
+        width: 90%;
+    }   
 }
+@media screen and (max-width:1000px){
+    div.flex-container>form{
+        width:40%;
+    }
+    input[type=text]{
+        width: 40%;
+    }    
+}
+@media screen and (max-width:500px){
+    div.flex-container>form{
+        width:50%;
+    }
+    input[type=text]{
+        width: 50%;
+    }    
+    
+}
+
 
 .flex-container{
     display: flex;
@@ -122,7 +155,7 @@ li a:hover {
     opacity: 0.8;
 }
 .flex-container>div>p{
-    background-color: rgba(169, 169, 169, 0.445);
+    background-color: rgba(169, 169, 169, 0.76);
     
 }
 .flex-container>div>h4{
@@ -135,7 +168,7 @@ li a:hover {
 .flex-container.footer{
     height: 7%;
     align-content: flex-end;
-    justify-content: last baseline;
+    justify-content: center;
     background-color:rgb(243, 202, 21);
     opacity: 0.5;
 }
@@ -144,3 +177,41 @@ li a:hover {
     bottom: 0;
     width: 100%;
 }
+.flex-container>form{
+    background-color: rgba(192, 183, 183, 0.562);
+    display: table;
+    width: 30%;
+    align-items: center;
+}
+input[type=text]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=email]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=password]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=submit]{
+    width: 50%;
+    background-color: rgb(243, 202, 21);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
