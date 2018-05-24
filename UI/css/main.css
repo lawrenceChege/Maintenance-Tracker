@@ -9,7 +9,7 @@ body{
  .nav-bar {
     top: 10;
     width: 99%;
-    background-color: rgba(44, 14, 14, 0.932);
+    background-color: rgba(44, 14, 14, 0.74);
     position: -webkit-sticky; /* Safari */
     position: sticky;    
 }
@@ -141,9 +141,9 @@ li a:hover {
     display: -webkit-flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    height: 50%;
-    align-items: baseline;
-    align-content: center;
+    /* height: 50%; */
+    /* align-items: baseline;
+    align-content: center; */
      
 }
 .flex-container>div{
@@ -163,8 +163,9 @@ li a:hover {
     background-color: rgba(169, 169, 169, 0.445);
     
 }
-.flex-container.banner{
-    height: 7%;
+.banner{
+    max-height: 7%;
+    text-align: center;
 }
 .flex-container.footer{
     height: 7%;
@@ -183,6 +184,8 @@ li a:hover {
     display: table;
     width: 30%;
     align-items: center;
+    margin-top: 10px;
+    
 }
 input[type=text]{
     width: 90%;
