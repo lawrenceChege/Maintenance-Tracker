@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif">
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -41,8 +43,45 @@
         </div>
     </section>
     <section class="main">
-        <div class="flex-container newreq" id="new">
-
+        <div class=" newreq" id="new">            
+            <form action="">
+                <h4>New Request</h4>
+                <div class="form-label">
+                    <label for="category"> Category </label>
+                </div> 
+                <div class="form-input">
+                    <select name="category" id="category">
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Repair"> Repair</option>
+                    </select>                    
+                </div>
+                <div class="form-label">
+                    <label for="freq"> Frequency of request</label>
+                </div> 
+                <div class="form-input">
+                    <select name="freq" id="freq">
+                        <option value="daily">Daily</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Monthly"> Monthly</option>
+                        <option value="Annualy">Anually</option>
+                    </select>
+                </div>
+                <div class="form-label">
+                        <label for="title"> Title</label>
+                    </div> 
+                    <div class="form-input">
+                        <input type="text" id="title" placeholder=" Enter Request title or subject">
+                    </div>                    
+                    <div class="form-label">
+                        <label for="description"> Description</label>
+                    </div> 
+                    <div class="form-input">
+                        <textarea name="message" style="width:100%; height:240px;">
+                            Describe Your request here</textarea>
+                    </div><br>                
+                    <input type="submit" value="Submit">           
+    
+            </form>
         </div>
         <div class="flex-container draftreq" id="drafts">
 
