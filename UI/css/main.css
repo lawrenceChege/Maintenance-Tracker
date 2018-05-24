@@ -98,23 +98,24 @@ li a:hover {
         height:40%;
     }
     div.flex-container>form{
-        width:70%;
+        width:100%;
     }
     div>input[type=text]{
-        width: 70%;
-    }   
+        width: 80%;
+    }
+    div>input[type=email]{
+        width: 80%;
+    }    
+    div>input[type=password]{
+        width: 80%;
+    }     
 }
 @media screen and (max-width:380px){
     div.flex-container>div{
         width:80%;
         height:30%;
     }
-    div.flex-container>form{
-        width:90%;
-    }
-    input[type=text]{
-        width: 90%;
-    }   
+     
 }
 @media screen and (max-width:1000px){
     div.flex-container>form{
