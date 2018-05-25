@@ -201,6 +201,9 @@ th{
 .purple{
     background-color: rgb(134, 75, 134);
 }
+.red{
+    background-color: red;
+}
 
 th{
     height: 50px;
