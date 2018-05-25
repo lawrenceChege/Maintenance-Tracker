@@ -33,12 +33,11 @@
     </header>
     <section>
         <div class="sidenav">
-            <a href="#new"><i class="fa fa-plus"></i> New Request</a>
-            <a href="#drafts"> Drafts</a>
-            <a href="#sent"></i> Sent</a>
-            <a href="#approved"> Approved</a>
-            <a href="#rejected"> Rejected</a>
-            <a href="#resolved"> Resolved</a>
+            <a href="#new"><i class="fa fa-plus"></i> New Request</a>            
+            <a href="#sent"><<i class="fa fa-check"> Sent</a>
+            <a href="#approved"><i class="fa fa-check"><i class="fa fa-check"></i> Approved</a>
+            <a href="#rejected"><i class="fa fa-remove"></i> Rejected</a>
+            <a href="#resolved"> <i class="fa fa-check"><i class="fa fa-check"><i class="fa fa-check"></i>Resolved</a>
             <a href="#messages"> Messages</a>
         </div>
     </section>
@@ -76,16 +75,14 @@
                         <label for="description"> Description</label>
                     </div> 
                     <div class="form-input">
-                        <textarea name="message" style="width:100%;" rows="7"
+                        <textarea name="message" id="description" rows="7"
                            placeholder="Describe Your request here" required></textarea>
                     </div>               
-                    <input type="submit" value="Create Request">           
+                    <input id="Create" type="submit" value="Create Request"> <br>          
     
             </form>
         </div>
-        <div class="flex-container draftreq" id="drafts">
-
-        </div>
+        
         <div class="flex-container sentreq" id="sent">
 
         </div>

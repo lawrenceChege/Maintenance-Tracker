@@ -121,6 +121,7 @@ li a:hover {
     width: 90%;
     margin-left: 40px;
     display: table;
+    overflow-y: scroll;
 }
 .form-input>select{
     height: 40px;
@@ -128,6 +129,9 @@ li a:hover {
 #category, #title, #freq, #new, #description {
     width: 90%;
     margin: 10px 10px 10px 10px;
+}
+#Create{
+        margin-right: 10%;
 }
 /* #freq {
     width: 100%;
@@ -206,6 +210,8 @@ input[type=submit]{
 .main {
     margin-left: 12%;
     padding: 0px 10px;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 #h4{
     text-align: center;
