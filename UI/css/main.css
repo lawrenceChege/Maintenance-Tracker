@@ -138,6 +138,9 @@ body{
     overflow-y: scroll; */
     font-family: "Bad script";
 }
+.newreq>form:hover{
+    background-color: rgba(80, 94, 94, 0.763);
+}
 .form-input>select{
     height: 40px;
 }
@@ -190,6 +193,10 @@ tr:nth-child(odd) {
 }
 th{
     background-color: rgba(22, 223, 223, 0.849)
+}
+.green{
+    background-color: green;
+    
 }
 
 th{

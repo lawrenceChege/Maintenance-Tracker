@@ -31,25 +31,25 @@
     <section >
         <div class="sidenav">
             <a href="user-new-request.html"> <i class="fa fa-plus"></i> New Request</a>  
-            <a href="#all"><i class="fa fa-home"></i> All</a>          
-            <a href="#sent"><i class="fa fa-check"></i> Sent</a>
-            <a class="active" href="#approved"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
-            <a href="#resolved"><i class="fa fa-check"></i><i class="fa fa-check"></i>
+            <a   href="user-dashboard.html"><i class="fa fa-home"></i> All</a>          
+            <a  href="user-sent-requests.html"><i class="fa fa-check"></i> Sent</a>
+            <a c class="green" href="user-approved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
+            <a href="user-resolved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i>
                 <i class="fa fa-check"></i> Resolved</a>
-            <a href="#rejected"><i class="fa fa-remove"></i> Rejected</a>
-            <a href="#messages"> Messages</a>
+            <a href="user-rejected-requests.html"><i class="fa fa-remove"></i> Rejected</a>
+            <a href="messages.html"> Messages</a>
         </div>
     </section>
     <section class="main">        
-        <div class="flex-container sentreq" id="sent">
-            <table id="sentitems">
-                <tr>
-                    <th>Category</th>
-                    <th>frequency</th>
-                    <th>title</th>
-                    <th>description</th>
-                    <th>date submited</th>
-                    <th>status</th>
+        <div class="flex-container sentreq" id="Approved">
+            <table id="approveditems">
+                <tr >
+                    <th class="green">Category</th>
+                    <th class="green">frequency</th>
+                    <th class="green">title</th>
+                    <th class="green">description</th>
+                    <th class="green">date submited</th>
+                    <th class="green">status</th>
                     
                 </tr>
                 <tr>
@@ -74,7 +74,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
-                    <td>Rejected</td>
+                    <td>Approved</td>
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
@@ -82,7 +82,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
-                    <td>Resolved</td>
+                    <td>Approved</td>
                 </tr>                                               
                 <tr>
                     <td>Repair</td>
@@ -90,7 +90,7 @@
                     <td>forgot phone password</td>
                     <td>I am stupid </td>
                     <td>3/6/2018</td>
-                    <td>pending</td>
+                    <td>Approved</td>
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
@@ -106,7 +106,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
-                    <td>pending</td>
+                    <td>Approved</td>
                 </tr>                                               
                 <tr>
                     <td>Maintenance</td>
@@ -114,7 +114,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
-                    <td>Rejected</td>
+                    <td>Approved</td>
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
@@ -122,23 +122,11 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
-                    <td>Resolved</td>
+                    <td>Approved</td>
                 </tr> 
-               
+            </table>               
         </div>
-        <div class="flex-container approvedreq" id="approved">
-
-        </div>
-        <div class="flex-container rejectedwreq" id="rejected">
-
-        </div>
-        <div class="flex-container resolvedreq" id="resolved">
-
-        </div>
-        <div class="flex-container msg" id="messages">
-
-        </div>
-                 
+                       
     </section>
    
     
