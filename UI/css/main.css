@@ -1,27 +1,35 @@
 body{
     background-color: white;
-    font-family: 'Bad Script';
+    font-family: 'Roboto';
     font-size: 22px;
     background-repeat: no-repeat;
     background-image: url(../Images/maintenance.jpg);
  }
 /* navigation bar*/ 
 .nav-bar {
-    top: 10%;
+    top: 0;
     width: 99%;
     background-color: rgba(44, 14, 14, 0.74);
     position: -webkit-sticky; /* Safari */
     position: sticky;
+            
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
     
-      
+}
+.sticky + .main + .sidenav{
+    padding-top: 102px;
 }
 .nav-bar>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;    
-    
-}
+ } 
 .nav-bar>ul>li {
     float: left;
     border-right: 1px solid #bbb;
@@ -56,10 +64,11 @@ body{
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .active {
     background-color: rgb(24, 202, 233);
 }
-li a:hover {
+ nav li a:hover {
     background-color: #111;
 }
 /* navigation bar*/
@@ -72,6 +81,7 @@ li a:hover {
     height: 50%;
     align-items: baseline;
     align-content: center; 
+    z-index: -1;  
      
 }
 .flex-container>div{
@@ -104,25 +114,29 @@ li a:hover {
     width: 30%;
     align-items: center;
     margin-top: 10px;
+    font-family: "Bad script";
     
 }
-.flex-container>form :hover{
+.flex-container>:hover{
     background-color: rgba(0, 0, 0, 0.267);
 }
+
 .newreq {
     display: flex;
     width: 100%;
     margin-left: 40px;
     left: 40px;
     height: 90%;
+    z-index: -1;  
     
 }
 .newreq>form{
     background-color: rgba(80, 94, 94, 0.863);
     width: 90%;
     margin-left: 40px;
-    display: table;
-    overflow-y: scroll;
+    /* display: table;
+    overflow-y: scroll; */
+    font-family: "Bad script";
 }
 .form-input>select{
     height: 40px;
@@ -132,13 +146,16 @@ li a:hover {
     margin: 10px 10px 10px 10px;
 }
 #Create{
-        margin-right: 10%;
+    margin-right: 10%;
+    z-index: -1;  
+
 }
 #sentitems{
     display: table;
     margin-left: 40px;
     left: 40px;
     height: 90%;
+    z-index: -1;  
 
 }
 .flex-container>form{
@@ -226,18 +243,24 @@ input[type=submit]{
     border-radius: 4px;
     cursor: pointer;
     float: right;
-}/*Input methods */
+}
+input[type=submit]:hover {
+    background-color: rgb(21, 99, 243);
+        
+}
+/*Input methods */
 /*The sidebar*/
 .sidenav {
     height: 100%;
-    width: 12%;
+    width: 15%;
     position: fixed;
-    z-index: 1;
-    top: 15;
+    z-index: -1;  
+    top: 10%;
     left: 0;
     background-color: rgba(17, 17, 17, 0.671);
     overflow-x: hidden;
     padding-top: 20px;
+    font-family: "Bad script";
 }
 .sidenav a{
     padding: 6px 8px 6px 16px;
@@ -245,11 +268,11 @@ input[type=submit]{
     color: rgba(252, 249, 249, 0.952);
     display: block;
 }
-.sidenav a:hover {
+.sidenav a:hover{
     color: rgb(9, 245, 245);
     background-color: white;
 }
-.sidenav a:active {
+.sidenav a:active{
     color: rgb(9, 245, 245);
     background-color: white;
 }
@@ -277,7 +300,11 @@ input[type=submit]{
         overflow-y: auto;
         overflow-x: auto;
         width: 800px;
-     }    
+    }
+    th, td{
+        padding: 10px;
+        text-align: center;
+    }    
 }
 
 @media screen and (max-width:600px){
@@ -308,7 +335,17 @@ input[type=submit]{
     }
     input[type=text]{
         width: 60%;
-    }   
+    } 
+    div.flex-container.sentreq{
+        overflow-y: auto;
+        overflow-x: auto;
+        width: 600px;
+        z-index: 1;
+        
+    }
+     div.flex-container.sentreq>table{
+       font-size: 15px;
+    }    
 
 }
 @media screen and (max-width:500px){
@@ -350,7 +387,7 @@ input[type=submit]{
     }
     div.sidenav a{
         font-size: 18px;
-    }   
+    }     
 }
 @media screen and (max-width:380px){
     div.flex-container>div{

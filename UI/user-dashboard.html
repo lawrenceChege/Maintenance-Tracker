@@ -13,28 +13,25 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <header>
-        
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#">Maintenance Tracker</a></li>
-                <li><a  href="user-dashboard.html"><i class="fa fa-cloud"></i>
-                        Dashboard </a></li>                              
-                <div class="nav-bar-right">
-                    <ul>
-                        <!-- <li><a  href="signup.html"> <i class="fa fa-plug"></i>
-                            Sign Up</a></li> -->
-                        <li><a  href="index.html"><i class="fa fa-plug"></i>
-                            log out</a></li>
-                    </ul>
-                </div>
-            </ul>
-        </nav>
-    </header>
-    <section>
+    <nav id="myHeader" class="nav-bar header">
+        <ul>
+            <li><a href="#">Maintenance Tracker</a></li>
+            <li><a  href="user-dashboard.html"><i class="fa fa-cloud"></i>
+                    Dashboard </a></li>                              
+            <div class="nav-bar-right">
+                <ul>
+                    <!-- <li><a  href="signup.html"> <i class="fa fa-plug"></i>
+                        Sign Up</a></li> -->
+                    <li><a  href="index.html"><i class="fa fa-plug"></i>
+                        log out</a></li>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+    <section >
         <div class="sidenav">
-            <a href="#new"><i class="fa fa-plus"></i> New Request</a>  
-            <a href="#all"><i class="fa fa-home"></i> All</a>          
+            <a href="user-new-request.html"> <i class="fa fa-plus"></i> New Request</a>  
+            <a  class="active" href="#all"><i class="fa fa-home"></i> All</a>          
             <a href="#sent"><i class="fa fa-check"></i> Sent</a>
             <a href="#approved"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
             <a href="#resolved"><i class="fa fa-check"></i><i class="fa fa-check"></i>
@@ -43,53 +40,7 @@
             <a href="#messages"> Messages</a>
         </div>
     </section>
-    <section class="main">
-        <div class=" newreq" id="new">            
-            <form action="">
-                <h4 id="h4">New Request</h4>
-                <div class="form-label">
-                    <label for="category"> Category </label>
-                </div> 
-                <div class="form-input">
-                    <select name="category" id="category">
-                        <option value="Maintenance">Maintenance</option>
-                        <option value="Repair"> Repair</option>
-                    </select>                    
-                </div>
-                <div class="form-label">
-                    <label for="freq"> Frequency of request</label>
-                </div> 
-                <div class="form-input">
-                    <select name="freq" id="freq">
-                        <option value="once">Once</option>
-                        <option value="daily">Daily</option>
-                        <option value="Weekly">Weekly</option>
-                        <option value="Monthly"> Monthly</option>
-                        <option value="Annualy">Anually</option>
-                    </select>
-                </div>
-                <div class="form-label">
-                        <label for="title"> Title</label>
-                    </div> 
-                    <div class="form-input">
-                        <input type="text" id="title" placeholder=" Enter Request title or subject" required>
-                    </div>                    
-                    <div class="form-label">
-                        <label for="description"> Description</label>
-                    </div> 
-                    <div class="form-input">
-                        <textarea name="message" id="description" rows="7"
-                           placeholder="Describe Your request here" required></textarea>
-                    </div>               
-                    <input id="Create" type="submit" value="Create Request"> <br>          
-    
-            </form>
-        </div>
-        
-        <div class="flex-container sentreq" id="all">
-
-
-        </div>
+    <section class="main">        
         <div class="flex-container sentreq" id="sent">
             <table id="sentitems">
                 <tr>
@@ -98,6 +49,7 @@
                     <th>title</th>
                     <th>description</th>
                     <th>date submited</th>
+                    <th>status</th>
                     
                 </tr>
                 <tr>
@@ -106,6 +58,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
+                    <td>Approved</td>
                 </tr>                                               
                 <tr>
                     <td>Repair</td>
@@ -113,6 +66,7 @@
                     <td>Mouse broken</td>
                     <td>You come do your thing </td>
                     <td>1/4/2018</td>
+                    <td>Approved</td>
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
@@ -120,6 +74,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
+                    <td>Rejected</td>
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
@@ -127,6 +82,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
+                    <td>Resolved</td>
                 </tr>                                               
                 <tr>
                     <td>Repair</td>
@@ -134,6 +90,7 @@
                     <td>forgot phone password</td>
                     <td>I am stupid </td>
                     <td>3/6/2018</td>
+                    <td>pending</td>
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
@@ -141,6 +98,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
+                    <td>Approved</td>
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
@@ -148,6 +106,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
+                    <td>pending</td>
                 </tr>                                               
                 <tr>
                     <td>Maintenance</td>
@@ -155,6 +114,7 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
+                    <td>Rejected</td>
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
@@ -162,29 +122,9 @@
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
+                    <td>Resolved</td>
                 </tr> 
-                <tr>
-                    <td>Maintenance</td>
-                    <td>Weekly</td>
-                    <td>Change generator oil</td>
-                    <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                </tr>                                               
-                <tr>
-                    <td>Maintenance</td>
-                    <td>Weekly</td>
-                    <td>Change generator oil</td>
-                    <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                </tr> 
-                <tr>
-                    <td>Maintenance</td>
-                    <td>Weekly</td>
-                    <td>Change generator oil</td>
-                    <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                </tr> 
-
+               
         </div>
         <div class="flex-container approvedreq" id="approved">
 
