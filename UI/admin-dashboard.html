@@ -3,29 +3,135 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Maintenance Tracker| Sign In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif">
     <script src="js/main.js"></script>
 </head>
-<title>
-    Maintenance Tracker| Dashboard
-</title>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="index.html">Maintenance Tracker</a></li>
-                <li><a class="active" href="admin-dashboard.html">Dashboard</a></li>
-                <div class="nav-bar-right">
-                    <ul>
-                        <!-- <li><a href="signup.html">Sign Up<>/a></li -->
-                        <li><a href="logout.html">Logout</a></li>
-                    </ul>
-                </div>
-            </ul>
-        </nav>
-    </header>
+    <nav id="myHeader" class="nav-bar header">
+        <ul>
+            <li><a href="#">Maintenance Tracker</a></li>
+            <li><a  href="user-dashboard.html"><i class="fa fa-cloud"></i>
+                    Dashboard </a></li>                              
+            <div class="nav-bar-right">
+                <ul>
+                    <!-- <li><a  href="signup.html"> <i class="fa fa-plug"></i>
+                        Sign Up</a></li> -->
+                    <li><a  href="index.html"><i class="fa fa-plug"></i>
+                        log out</a></li>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+    <section >
+        <div class="sidenav">
+            <a  class="active" href="#all"><i class="fa fa-home"></i> All</a>          
+            <a href="admin-recieved-request.html"><i class="fa fa-check"></i> Received </a>
+            <a href="admin-approved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
+            <a href="admin-reolved-requests.html"><i class="fa fa-check"></i><i class="fa fa-check"></i>
+                <i class="fa fa-check"></i> Resolved</a>
+            <a href="admin-rejected-requests.html"><i class="fa fa-remove"></i> Rejected</a>
+            <a href="#messages"> Messages</a>
+        </div>
+    </section>
+    <section class="main">        
+        <div class="flex-container sentreq" id="sent">
+            <table id="sentitems">
+                <tr>
+                    <th>Category</th>
+                    <th>frequency</th>
+                    <th>title</th>
+                    <th>description</th>
+                    <th>date submited</th>
+                    <th>status</th>
+                    
+                </tr>
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Weekly</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>
+                    <td>Approved</td>
+                </tr>                                               
+                <tr>
+                    <td>Repair</td>
+                    <td>once</td>
+                    <td>Mouse broken</td>
+                    <td>You come do your thing </td>
+                    <td>1/4/2018</td>
+                    <td>Approved</td>
+                </tr> 
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Weekly</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>
+                    <td>Rejected</td>
+                </tr> 
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Weekly</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>
+                    <td>Resolved</td>
+                </tr>                                               
+                <tr>
+                    <td>Repair</td>
+                    <td>once</td>
+                    <td>forgot phone password</td>
+                    <td>I am stupid </td>
+                    <td>3/6/2018</td>
+                    <td>pending</td>
+                </tr> 
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Weekly</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>
+                    <td>Approved</td>
+                </tr> 
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Weekly</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>
+                    <td>pending</td>
+                </tr>                                               
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Weekly</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>
+                    <td>Rejected</td>
+                </tr> 
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Weekly</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>
+                    <td>Resolved</td>
+                </tr> 
+               
+        </div>
+   
+                 
+    </section>
+   
+    
+    <footer class="flex-container footer">
+        <P>Don't fear the Dog, Fear the owner</P>
+    </footer>
 </body>
 </html> 
