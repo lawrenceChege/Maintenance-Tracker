@@ -31,46 +31,42 @@
     <section >
         <div class="sidenav">
             <a href="user-new-request.html"> <i class="fa fa-plus"></i> New Request</a>  
-            <a  class="active" href="#all"><i class="fa fa-home"></i> All</a>          
-            <a href="#sent"><i class="fa fa-check"></i> Sent</a>
-            <a href="#approved"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
-            <a href="#resolved"><i class="fa fa-check"></i><i class="fa fa-check"></i>
+            <a  href="user-dashboard.html"><i class="fa fa-home"></i> All</a>          
+            <a href="user-sent-requests.html"><i class="fa fa-check"></i> Sent</a>
+            <a href="user-approved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
+            <a href="user-resolved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i>
                 <i class="fa fa-check"></i> Resolved</a>
-            <a href="#rejected"><i class="fa fa-remove"></i> Rejected</a>
-            <a href="#messages"> Messages</a>
+            <a class="red" href="user-rejected-requests.html"><i class="fa fa-remove"></i> Rejected</a>
+            <a href="messages.html"> Messages</a>
         </div>
     </section>
     <section class="main">        
         <div class="flex-container sentreq" id="sent">
             <table id="sentitems">
                 <tr>
-                    <th>Category</th>
-                    <th>frequency</th>
-                    <th>title</th>
-                    <th>description</th>
-                    <th>date submited</th>
-                    <th>status</th>
+                    <th class="red">Category</th>
+                    <th class="red" >Title</th>
+                    <th class="red" >Description</th>
+                    <th class="red" >Date submited</th>
+                    <th class="red" >Status</th>
                     
                 </tr>
                 <tr>
-                    <td>Maintenance</td>
-                    <td>Weekly</td>
+                    <td>Maintenance</td>                   
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
-                    <td>Approved</td>
+                    <td>Rejected</td>
                 </tr>                                               
                 <tr>
-                    <td>Repair</td>
-                    <td>once</td>
+                    <td>Repair</td>                    
                     <td>Mouse broken</td>
                     <td>You come do your thing </td>
                     <td>1/4/2018</td>
-                    <td>Approved</td>
+                    <td>Rejected</td>
                 </tr> 
                 <tr>
-                    <td>Maintenance</td>
-                    <td>Weekly</td>
+                    <td>Maintenance</td>                    
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
@@ -78,39 +74,20 @@
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
-                    <td>Weekly</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
-                    <td>Resolved</td>
+                    <td>Rejected</td>
                 </tr>                                               
                 <tr>
                     <td>Repair</td>
-                    <td>once</td>
                     <td>forgot phone password</td>
                     <td>I am stupid </td>
                     <td>3/6/2018</td>
-                    <td>pending</td>
+                    <td>Rejected</td>
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
-                    <td>Weekly</td>
-                    <td>Change generator oil</td>
-                    <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                    <td>Approved</td>
-                </tr> 
-                <tr>
-                    <td>Maintenance</td>
-                    <td>Weekly</td>
-                    <td>Change generator oil</td>
-                    <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                    <td>pending</td>
-                </tr>                                               
-                <tr>
-                    <td>Maintenance</td>
-                    <td>Weekly</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
@@ -118,26 +95,27 @@
                 </tr> 
                 <tr>
                     <td>Maintenance</td>
-                    <td>Weekly</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
                     <td>12/6/2018</td>
-                    <td>Resolved</td>
+                    <td>Rejected</td>
+                </tr>                                               
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>
+                    <td>Rejected</td>
                 </tr> 
-               
-        </div>
-        <div class="flex-container approvedreq" id="approved">
-
-        </div>
-        <div class="flex-container rejectedwreq" id="rejected">
-
-        </div>
-        <div class="flex-container resolvedreq" id="resolved">
-
-        </div>
-        <div class="flex-container msg" id="messages">
-
-        </div>
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>
+                    <td>Rejected</td>
+                </tr> 
+            </table>   
+        </div>        
                  
     </section>
    

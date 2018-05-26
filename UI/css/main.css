@@ -1,26 +1,35 @@
 body{
     background-color: white;
-    font-family: 'Bad Script';
+    font-family: 'Roboto';
     font-size: 22px;
     background-repeat: no-repeat;
     background-image: url(../Images/maintenance.jpg);
  }
-
- .nav-bar {
-    top: 10;
+/* navigation bar*/ 
+.nav-bar {
+    top: 0;
     width: 99%;
     background-color: rgba(44, 14, 14, 0.74);
     position: -webkit-sticky; /* Safari */
-    position: sticky;    
+    position: sticky;
+            
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+.sticky + .main + .sidenav{
+    padding-top: 102px;
 }
 .nav-bar>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;    
-    
-}
-
+ } 
 .nav-bar>ul>li {
     float: left;
     border-right: 1px solid #bbb;
@@ -55,12 +64,262 @@ body{
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .active {
     background-color: rgb(24, 202, 233);
 }
-li a:hover {
+ nav li a:hover {
     background-color: #111;
 }
+/* navigation bar*/
+/*flex-box*/
+.flex-container{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 50%;
+    align-items: baseline;
+    align-content: center; 
+    z-index: -1;  
+     
+}
+.flex-container>div{
+    background-color: darkgray;
+    width:70%;
+    margin: 10px;
+    text-align: center;
+    color:rgb(12, 12, 12);
+    background-image: url(../Images/maintenance2.jpg);
+    opacity: 0.8;
+}
+.flex-container>div>p{
+    background-color: rgba(169, 169, 169, 0.76);
+    
+}
+.flex-container>div>h4{
+    background-color: rgba(169, 169, 169, 0.445);
+    
+}
+.flex-container.footer{
+    height: 7px;
+    align-content: flex-end;
+    justify-content: center;
+    background-color:rgb(243, 202, 21);
+    opacity: 0.5;
+}
+.flex-container>form{
+    background-color: rgba(192, 183, 183, 0.562);
+    display: table;
+    width: 30%;
+    align-items: center;
+    margin-top: 10px;
+    font-family: "Bad script";
+    
+}
+.flex-container>:hover{
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.newreq {
+    display: flex;
+    width: 100%;
+    margin-left: 40px;
+    left: 40px;
+    height: 90%;
+    z-index: -1;  
+    
+}
+.newreq>form{
+    background-color: rgba(80, 94, 94, 0.863);
+    width: 90%;
+    margin-left: 40px;
+    /* display: table;
+    overflow-y: scroll; */
+    font-family: "Bad script";
+}
+.newreq>form:hover{
+    background-color: rgba(80, 94, 94, 0.763);
+}
+.form-input>select{
+    height: 40px;
+}
+#category, #title, #freq, #new, #description {
+    width: 90%;
+    margin: 10px 10px 10px 10px;
+}
+#Create{
+    margin-right: 10%;
+    z-index: -1;  
+
+}
+#sentitems{
+    display: table;
+    margin-left: 40px;
+    left: 40px;
+    height: 90%;
+    z-index: -1;  
+
+}
+.flex-container>form{
+    background-color: rgba(192, 183, 183, 0.562);
+    display: table;
+    width: 90%;
+    align-items: center;
+    margin-top: 10px;
+ }
+ 
+table{
+    border-collapse: collapse;
+    background-color: white;
+    width: 90%;
+    margin-left: 40px;
+    display: table;
+       
+}
+
+table, th, td {
+    border-bottom: 1px solid #ddd;
+}
+th, td{
+    padding: 15px;
+    text-align: left;
+}
+tr:hover {
+    background-color: #548d8f;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+th{
+    background-color: rgba(22, 223, 223, 0.849)
+}
+.green{
+    background-color: green;
+    
+}
+.purple{
+    background-color: rgb(134, 75, 134);
+}
+.red{
+    background-color: red;
+}
+
+th{
+    height: 50px;
+}
+/* #freq {
+    width: 100%;
+}
+#new {
+    width: 100%;
+} */
+/*flex-box*/
+.banner{
+    max-height: 7%;
+    text-align: center;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*form Input methods */
+input[type=text]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=email]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=password]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=submit]{
+    width: 50%;
+    background-color: rgb(21, 180, 243);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: rgb(21, 99, 243);
+        
+}
+/*Input methods */
+/*The sidebar*/
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: -1;  
+    top: 10%;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.671);
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: "Bad script";
+}
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: rgba(252, 249, 249, 0.952);
+    display: block;
+}
+.sidenav a:hover{
+    color: rgb(9, 245, 245);
+    background-color: white;
+}
+.sidenav a:active{
+    color: rgb(9, 245, 245);
+    background-color: white;
+}
+.main {
+    margin-left: 12%;
+    padding: 0px 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+#h4{
+    text-align: center;
+}
+
+/*The sidebar*/
+/* media queries*/ 
+
+@media screen and (max-width:1000px){
+    div.flex-container>form{
+        width:40%;
+    }
+    input[type=text]{
+        width: 40%;
+    }
+    div.flex-container.sentreq{
+        overflow-y: auto;
+        overflow-x: auto;
+        width: 800px;
+    }
+    th, td{
+        padding: 10px;
+        text-align: center;
+    }    
+}
+
 @media screen and (max-width:600px){
     div.nav-bar-right,
     div.nav-bar-right>ul>li,
@@ -89,8 +348,34 @@ li a:hover {
     }
     input[type=text]{
         width: 60%;
-    }   
+    } 
+    div.flex-container.sentreq{
+        overflow-y: auto;
+        overflow-x: auto;
+        width: 600px;
+        z-index: 1;
+        
+    }
+     div.flex-container.sentreq>table{
+       font-size: 15px;
+    }    
 
+}
+@media screen and (max-width:500px){
+    div.flex-container>form{
+        width:50%;
+    }
+    input[type=text]{
+        width: 50%;
+    }
+    div.sidenav{
+        padding-top: 15%;
+        width: 30%;
+    }
+    div.sidenav a{
+        font-size: 18px;
+    }    
+    
 }
 @media screen and (max-width:450px){
     div.flex-container>div{
@@ -108,6 +393,13 @@ li a:hover {
     }    
     div>input[type=password]{
         width: 80%;
+    }  
+    div.sidenav{
+        padding-top: 15%;
+        width: 30%;
+    }
+    div.sidenav a{
+        font-size: 18px;
     }     
 }
 @media screen and (max-width:380px){
@@ -115,107 +407,13 @@ li a:hover {
         width:80%;
         height:30%;
     }
+    div.sidenav{
+        padding-top: 15%;
+        width: 30%;
+    }
+    div.sidenav a{
+        font-size: 18px;
+    }   
      
 }
-@media screen and (max-width:1000px){
-    div.flex-container>form{
-        width:40%;
-    }
-    input[type=text]{
-        width: 40%;
-    }    
-}
-@media screen and (max-width:500px){
-    div.flex-container>form{
-        width:50%;
-    }
-    input[type=text]{
-        width: 50%;
-    }    
-    
-}
-
-
-.flex-container{
-    display: flex;
-    display: -webkit-flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    /* height: 50%; */
-    /* align-items: baseline;
-    align-content: center; */
-     
-}
-.flex-container>div{
-    background-color: darkgray;
-    width:70%;
-    margin: 10px;
-    text-align: center;
-    color:rgb(12, 12, 12);
-    background-image: url(../Images/maintenance2.jpg);
-    opacity: 0.8;
-}
-.flex-container>div>p{
-    background-color: rgba(169, 169, 169, 0.76);
-    
-}
-.flex-container>div>h4{
-    background-color: rgba(169, 169, 169, 0.445);
-    
-}
-.banner{
-    max-height: 7%;
-    text-align: center;
-}
-.flex-container.footer{
-    height: 7%;
-    align-content: flex-end;
-    justify-content: center;
-    background-color:rgb(243, 202, 21);
-    opacity: 0.5;
-}
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.flex-container>form{
-    background-color: rgba(192, 183, 183, 0.562);
-    display: table;
-    width: 30%;
-    align-items: center;
-    margin-top: 10px;
-    
-}
-input[type=text]{
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-input[type=email]{
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-input[type=password]{
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-input[type=submit]{
-    width: 50%;
-    background-color: rgb(243, 202, 21);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-  
+/* media queries*/ 
