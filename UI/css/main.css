@@ -507,6 +507,7 @@ input[type=submit]:hover {
     padding: 20px 30px;
     background-color: white;
     position: relative;
+    z-index: -1;
     border-radius: 6px;
 }
 
