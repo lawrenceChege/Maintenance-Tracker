@@ -15,3 +15,17 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.nextElementSibling;
+    if (container.style.maxHeight){
+      container.style.maxHeight = null;
+    } else {
+      container.style.maxHeight = container.scrollHeight + "px";
+    } 
+  });
+}
