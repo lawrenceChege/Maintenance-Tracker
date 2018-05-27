@@ -20,8 +20,9 @@
                     Dashboard </a></li>                              
             <div class="nav-bar-right">
                 <ul>
-                    <!-- <li><a  href="signup.html"> <i class="fa fa-plug"></i>
-                        Sign Up</a></li> -->
+                    <li><a  href="#"> <i class="fa fa-comment"></i></a></li>
+                    <li><a  href="#"> <i class="fa fa-user"></i>
+                        Admin</a></li>
                     <li><a  href="index.html"><i class="fa fa-plug"></i>
                         log out</a></li>
                 </ul>
@@ -30,92 +31,122 @@
     </nav>
     <section >
         <div class="sidenav">
-            <a href="user-new-request.html"> <i class="fa fa-plus"></i> New Request</a>  
-            <a  href="user-dashboard.html"><i class="fa fa-home"></i> All</a>          
-            <a href="user-sent-requests.html"><i class="fa fa-check"></i> Sent</a>
-            <a href="user-approved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
-            <a href="user-resolved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i>
-                <i class="fa fa-check"></i> Resolved</a>
-            <a class="red" href="user-rejected-requests.html"><i class="fa fa-remove"></i> Rejected</a>
-            <a href="messages.html"> Messages</a>
+            <a   href="#all"><i class="fa fa-home"></i> All</a>          
+            <a href="admin-recieved-request.html"><i class="fa fa-check"></i> Received </a>
+            <a   href="admin-approved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
+            <a href="admin-resolved-requests.html"><i class="fa fa-check"></i><i class="fa fa-check"></i><i class="fa fa-check"></i> Resolved</a>
+            <a class="danger" href="admin-rejected-requests.html"><i class="fa fa-remove"></i> Rejected</a><br>
+            <a href="#messages"> <i class="fa fa-comment"></i>Messages</a>
         </div>
     </section>
     <section class="main">        
         <div class="flex-container sentreq" id="sent">
             <table id="sentitems">
-                <tr>
-                    <th class="red">Category</th>
-                    <th class="red" >Title</th>
-                    <th class="red" >Description</th>
-                    <th class="red" >Date submited</th>
-                    <th class="red" >Status</th>
+                <tr class="default">
+                    <th>Id</th>
+                    <th>User name</th>
+                    <th>Category</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date submited</th>
+                    <th>status</th>
+                    <th>Action</th>
+                    
                     
                 </tr>
                 <tr>
-                    <td>Maintenance</td>                   
-                    <td>Change generator oil</td>
-                    <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                    <td>Rejected</td>
-                </tr>                                               
-                <tr>
-                    <td>Repair</td>                    
-                    <td>Mouse broken</td>
-                    <td>You come do your thing </td>
-                    <td>1/4/2018</td>
-                    <td>Rejected</td>
-                </tr> 
-                <tr>
-                    <td>Maintenance</td>                    
-                    <td>Change generator oil</td>
-                    <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                    <td>Rejected</td>
-                </tr> 
-                <tr>
+                    <td>1</td>
+                    <td> Maina </td>
                     <td>Maintenance</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                    <td>Rejected</td>
+                    <td>12/6/2018</td>                   
+                    <td><button type="button" class=" btn danger"> Rejected</button></td>
+                    <td><button type="button" class=" btn success"> Approve</button></td>
                 </tr>                                               
                 <tr>
+                    <td>1</td>
+                    <td> Maina </td>
+                    <td>Repair</td>
+                    <td>Mouse broken</td>
+                    <td>You come do your thing </td>
+                    <td>1/4/2018</td>           
+                    <td><button type="button" class=" btn danger"> Rejected</button></td>
+                    <td><button type="button" class=" btn success"> Approve</button></td>
+                </tr> 
+                <tr>
+                    <td>1</td>
+                    <td> Maina </td>
+                    <td>Maintenance</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>                                       
+                    <td><button type="button" class=" btn danger"> Rejected</button></td>
+                    <td><button type="button" class=" btn success"> Approve</button></td>
+                </tr> 
+                <tr>
+                    <td>1</td>
+                    <td> Maina </td>
+                    <td>Maintenance</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>                                       
+                    <td><button type="button" class=" btn danger"> Rejected</button></td>
+                    <td><button type="button" class=" btn success"> Approve</button></td>
+                </tr>                                               
+                 <tr>
+                    <td>1</td>
+                    <td> Maina </td>
                     <td>Repair</td>
                     <td>forgot phone password</td>
                     <td>I am stupid </td>
-                    <td>3/6/2018</td>
-                    <td>Rejected</td>
+                    <td>3/6/2018</td>                   
+                    <td><button type="button" class=" btn danger"> Rejected</button></td>
+                    <td><button type="button" class=" btn success"> Approve</button></td>
                 </tr> 
                 <tr>
+                    <td>1</td>
+                    <td> Maina </td>
                     <td>Maintenance</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                    <td>Rejected</td>
+                    <td>12/6/2018</td>                   
+                    <td><button type="button" class=" btn danger"> Rejected</button></td>
+                    <td><button type="button" class=" btn success"> Approve</button></td>
                 </tr> 
                 <tr>
+                    <td>1</td>
+                    <td> Maina </td>
                     <td>Maintenance</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                    <td>Rejected</td>
+                    <td>12/6/2018</td>                    
+                    <td><button type="button" class=" btn danger"> Rejected</button></td>
+                    <td><button type="button" class=" btn success"> Approve</button></td>
                 </tr>                                               
                 <tr>
+                    <td>1</td>
+                    <td> Maina </td>
                     <td>Maintenance</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                    <td>Rejected</td>
+                    <td>12/6/2018</td>                   
+                    <td><button type="button" class=" btn danger"> Rejected</button></td>
+                    <td><button type="button" class=" btn success"> Approve</button></td>
                 </tr> 
                 <tr>
-                    <td>Maintenance</td>
+                    <td>1</td>
+                    <td> Maina </td>
+                    <td>Maintenance</td>                   
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>
-                    <td>Rejected</td>
+                    <td>12/6/2018</td>                   
+                    <td><button type="button" class=" btn danger"> Rejected</button></td>
+                    <td><button type="button" class=" btn success"> Approve</button></td>
                 </tr> 
-            </table>   
-        </div>        
+               
+        </div>
+   
                  
     </section>
    
