@@ -194,8 +194,8 @@ tr:nth-child(odd) {
 th{
     background-color: rgba(22, 223, 223, 0.849)
 }
-.green{
-    background-color: green;
+.blue{
+    background-color: blue;
     
 }
 .purple{
@@ -442,8 +442,8 @@ input[type=submit]:hover {
 .container {
     padding: 10px 40px;
     position: relative;
-    background-color: inherit;
-    width: 45%;
+    background-color: inherit;    
+    width: 43%;
 }
 
 /* The circles on the timeline */
@@ -506,7 +506,7 @@ input[type=submit]:hover {
 /* The actual content */
 .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color:gray;
     position: relative;
     z-index: -1;
     border-radius: 6px;
@@ -517,6 +517,9 @@ input[type=submit]:hover {
     color: white; /* Add a text color */
     padding: 10px; /* Add some padding */
     cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+round{
+    border-radius: 30%;
 }
 .success {background-color: #4CAF50;} /* Green */
 .success:hover {background-color: #46a049;}
