@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Maintenance Tracker| Sign In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/gif" href="animated_favicon1.gif">
-    <script src="js/main.js"></script>
+    <link rel="shortcut icon" href="../static/icons/favicon.ico">
+    <link rel="icon" type="image/gif" href="../static/icons/animated_favicon1.gif">
+    <script src="../static/js/main.js"></script>
 </head>
 <body>
     <nav id="myHeader" class="nav-bar header">
         <ul>
             <li><a href="#">Maintenance Tracker</a></li>
-            <li><a  href="user-dashboard.html"><i class="fa fa-cloud"></i>
+            <li><a  href="admin-dashboard.html"><i class="fa fa-cloud"></i>
                     Dashboard </a></li>                              
             <div class="nav-bar-right">
                 <ul>
                     <li><a  href="#"> <i class="fa fa-comment"></i></a></li>
                     <li><a  href="#"> <i class="fa fa-user"></i>
                         Admin</a></li>
-                    <li><a  href="index.html"><i class="fa fa-plug"></i>
+                    <li><a  href="../index.html"><i class="fa fa-plug"></i>
                         log out</a></li>
                 </ul>
             </div>
@@ -33,9 +33,9 @@
         <div class="sidenav">
             <a   href="#all"><i class="fa fa-home"></i> All</a>          
             <a href="admin-recieved-request.html"><i class="fa fa-check"></i> Received </a>
-            <a   href="admin-approved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
-            <a href="admin-resolved-requests.html"><i class="fa fa-check"></i><i class="fa fa-check"></i><i class="fa fa-check"></i> Resolved</a>
-            <a class="danger" href="admin-rejected-requests.html"><i class="fa fa-remove"></i> Rejected</a><br>
+            <a  href="admin-approved-request.html"><i class="fa fa-check"></i><i class="fa fa-check"></i> Approved</a>
+            <a class="warning" href="admin-reolved-requests.html"><i class="fa fa-check"></i><i class="fa fa-check"></i><i class="fa fa-check"></i> Resolved</a>
+            <a href="admin-rejected-requests.html"><i class="fa fa-remove"></i> Rejected</a><br>
             <a href="#messages"> <i class="fa fa-comment"></i>Messages</a>
         </div>
     </section>
@@ -49,8 +49,9 @@
                     <th>Title</th>
                     <th>Description</th>
                     <th>Date submited</th>
+                    <th>Date Approved</th>
                     <th>status</th>
-                    <th>Action</th>
+                    <th></th>
                     
                     
                 </tr>
@@ -60,9 +61,10 @@
                     <td>Maintenance</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>  
                     <td>12/6/2018</td>                   
-                    <td><button type="button" class=" btn danger"> Rejected</button></td>
-                    <td><button type="button" class=" btn success"> Approve</button></td>
+                    <td><button type="button" class=" btn success"> Approved</button></td>
+                    <td><button type="button" class=" btn warning"> Resolved</button></td>
                 </tr>                                               
                 <tr>
                     <td>1</td>
@@ -70,9 +72,10 @@
                     <td>Repair</td>
                     <td>Mouse broken</td>
                     <td>You come do your thing </td>
-                    <td>1/4/2018</td>           
-                    <td><button type="button" class=" btn danger"> Rejected</button></td>
-                    <td><button type="button" class=" btn success"> Approve</button></td>
+                    <td>1/4/2018</td>   
+                    <td>12/6/2018</td>          
+                    <td><button type="button" class=" btn success"> Approved</button></td>
+                    <td><button type="button" class=" btn warning"> Resolved</button></td>
                 </tr> 
                 <tr>
                     <td>1</td>
@@ -80,9 +83,10 @@
                     <td>Maintenance</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>  
                     <td>12/6/2018</td>                                       
-                    <td><button type="button" class=" btn danger"> Rejected</button></td>
-                    <td><button type="button" class=" btn success"> Approve</button></td>
+                    <td><button type="button" class=" btn success"> Approved</button></td>
+                    <td><button type="button" class=" btn warning"> Resolved</button></td>
                 </tr> 
                 <tr>
                     <td>1</td>
@@ -90,9 +94,10 @@
                     <td>Maintenance</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>  
                     <td>12/6/2018</td>                                       
-                    <td><button type="button" class=" btn danger"> Rejected</button></td>
-                    <td><button type="button" class=" btn success"> Approve</button></td>
+                    <td><button type="button" class=" btn success"> Approved</button></td>
+                    <td><button type="button" class=" btn warning"> Resolved</button></td>
                 </tr>                                               
                  <tr>
                     <td>1</td>
@@ -100,29 +105,32 @@
                     <td>Repair</td>
                     <td>forgot phone password</td>
                     <td>I am stupid </td>
-                    <td>3/6/2018</td>                   
-                    <td><button type="button" class=" btn danger"> Rejected</button></td>
-                    <td><button type="button" class=" btn success"> Approve</button></td>
-                </tr> 
-                <tr>
-                    <td>1</td>
-                    <td> Maina </td>
-                    <td>Maintenance</td>
-                    <td>Change generator oil</td>
-                    <td>The generator oils is changed weekly to avoid clogging </td>
-                    <td>12/6/2018</td>                   
-                    <td><button type="button" class=" btn danger"> Rejected</button></td>
-                    <td><button type="button" class=" btn success"> Approve</button></td>
-                </tr> 
-                <tr>
-                    <td>1</td>
-                    <td> Maina </td>
-                    <td>Maintenance</td>
-                    <td>Change generator oil</td>
-                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>3/6/2018</td> 
                     <td>12/6/2018</td>                    
-                    <td><button type="button" class=" btn danger"> Rejected</button></td>
-                    <td><button type="button" class=" btn success"> Approve</button></td>
+                    <td><button type="button" class=" btn success"> Approved</button></td>
+                    <td><button type="button" class=" btn warning"> Resolved</button></td>
+                </tr> 
+                <tr>
+                    <td>1</td>
+                    <td> Maina </td>
+                    <td>Maintenance</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td> 
+                    <td>12/6/2018</td>                   
+                    <td><button type="button" class=" btn success"> Approved</button></td>
+                    <td><button type="button" class=" btn warning"> Resolved</button></td>
+                </tr> 
+                <tr>
+                    <td>1</td>
+                    <td> Maina </td>
+                    <td>Maintenance</td>
+                    <td>Change generator oil</td>
+                    <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td> 
+                    <td>12/6/2018</td>                    
+                    <td><button type="button" class=" btn success"> Approved</button></td>
+                    <td><button type="button" class=" btn warning"> Resolved</button></td>
                 </tr>                                               
                 <tr>
                     <td>1</td>
@@ -130,9 +138,10 @@
                     <td>Maintenance</td>
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>  
                     <td>12/6/2018</td>                   
-                    <td><button type="button" class=" btn danger"> Rejected</button></td>
-                    <td><button type="button" class=" btn success"> Approve</button></td>
+                    <td><button type="button" class=" btn success"> Approved</button></td>
+                    <td><button type="button" class=" btn warning"> Resolved</button></td>
                 </tr> 
                 <tr>
                     <td>1</td>
@@ -140,9 +149,10 @@
                     <td>Maintenance</td>                   
                     <td>Change generator oil</td>
                     <td>The generator oils is changed weekly to avoid clogging </td>
+                    <td>12/6/2018</td>  
                     <td>12/6/2018</td>                   
-                    <td><button type="button" class=" btn danger"> Rejected</button></td>
-                    <td><button type="button" class=" btn success"> Approve</button></td>
+                    <td><button type="button" class=" btn success"> Approved</button></td>
+                    <td><button type="button" class=" btn warning"> Resolved</button></td>
                 </tr> 
                
         </div>
