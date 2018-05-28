@@ -14,7 +14,10 @@ body{
     position: sticky;
             
 }
-
+.signup{
+    width: 50%;
+    margin: auto;
+}
 .sticky{
     position: fixed;
     top: 0;
@@ -86,21 +89,21 @@ body{
 }
 .flex-container>div{
     background-color: darkgray;
-    width:70%;
+    width:50%;
     margin: 10px;
     text-align: center;
     color:rgb(12, 12, 12);
-    background-image: url(../Images/maintenance2.jpg);
+    /* background-image: url(../Images/maintenance2.jpg); */
     opacity: 0.8;
 }
-.flex-container>div>p{
+/* .flex-container>div>p{
     background-color: rgba(169, 169, 169, 0.76);
     
 }
 .flex-container>div>h4{
     background-color: rgba(169, 169, 169, 0.445);
     
-}
+} */
 .flex-container.footer{
     height: 7px;
     align-content: flex-end;
@@ -524,6 +527,7 @@ input[type=submit]:hover {
 round{
     border-radius: 30%;
 }
+.water{background-color: dodgerblue}
 .status{background-color: fuchsia}
 .success {background-color: #4CAF50;} /* Green */
 .success:hover {background-color: #46a049;}
