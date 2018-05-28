@@ -13,6 +13,7 @@ body{
     background-color: rgba(44, 14, 14, 0.74);
     position: -webkit-sticky; /* Safari */
     position: sticky;
+    z-index: 1000;
             
 }
 .signup{
@@ -515,7 +516,7 @@ input[type=submit]:hover {
 /* The actual content */
 .content {
     padding: 20px 30px;
-    background-color:gray;
+    background-color: #D6F599;
     position: relative;
     z-index: 1;
     border-radius: 6px;
