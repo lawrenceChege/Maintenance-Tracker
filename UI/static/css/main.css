@@ -4,6 +4,7 @@ body{
     font-size: 22px;
     /* background-repeat: no-repeat; */
     background-image: url(../Images/maintenance.jpg);
+    background-size: 100%;
  }
 /* navigation bar*/ 
 .nav-bar {
@@ -85,7 +86,7 @@ body{
     align-items: baseline;
     align-content: center; 
     z-index: -1;  
-     
+         
 }
 .flex-container>div{
     background-color: darkgray;
@@ -95,6 +96,7 @@ body{
     color:rgb(12, 12, 12);
     /* background-image: url(../Images/maintenance2.jpg); */
     opacity: 0.8;
+    border-radius: 50px;
 }
 /* .flex-container>div>p{
     background-color: rgba(169, 169, 169, 0.76);
@@ -112,12 +114,12 @@ body{
     opacity: 0.5;
 }
 .flex-container>form{
-    background-color: rgba(192, 183, 183, 0.562);
     display: table;
     width: 30%;
     align-items: center;
     margin-top: 10px;
     font-family: "Bad script";
+    margin: 0px;
     
 }
 .flex-container>:hover{
@@ -198,8 +200,12 @@ th{
     background-color: rgba(22, 223, 223, 0.849)
 }
 .blue{
-    background-color: blue;
+    background-color: cornflowerblue;
     
+}
+
+.soma{
+    background-color: #D6F599;
 }
 .purple{
     background-color: rgb(134, 75, 134);
