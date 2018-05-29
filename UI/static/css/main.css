@@ -4,6 +4,7 @@ body{
     font-size: 22px;
     /* background-repeat: no-repeat; */
     background-image: url(../Images/maintenance.jpg);
+    background-size: 100%;
  }
 /* navigation bar*/ 
 .nav-bar {
@@ -12,9 +13,13 @@ body{
     background-color: rgba(44, 14, 14, 0.74);
     position: -webkit-sticky; /* Safari */
     position: sticky;
+    z-index: 1000;
             
 }
-
+.signup{
+    width: 50%;
+    margin: auto;
+}
 .sticky{
     position: fixed;
     top: 0;
@@ -82,25 +87,26 @@ body{
     align-items: baseline;
     align-content: center; 
     z-index: -1;  
-     
+         
 }
 .flex-container>div{
     background-color: darkgray;
-    width:70%;
+    width:50%;
     margin: 10px;
     text-align: center;
     color:rgb(12, 12, 12);
-    background-image: url(../Images/maintenance2.jpg);
+    /* background-image: url(../Images/maintenance2.jpg); */
     opacity: 0.8;
+    border-radius: 50px;
 }
-.flex-container>div>p{
+/* .flex-container>div>p{
     background-color: rgba(169, 169, 169, 0.76);
     
 }
 .flex-container>div>h4{
     background-color: rgba(169, 169, 169, 0.445);
     
-}
+} */
 .flex-container.footer{
     height: 7px;
     align-content: flex-end;
@@ -109,12 +115,12 @@ body{
     opacity: 0.5;
 }
 .flex-container>form{
-    background-color: rgba(192, 183, 183, 0.562);
     display: table;
     width: 30%;
     align-items: center;
     margin-top: 10px;
     font-family: "Bad script";
+    margin: 0px;
     
 }
 .flex-container>:hover{
@@ -194,9 +200,13 @@ tr:nth-child(odd) {
 th{
     background-color: rgba(22, 223, 223, 0.849)
 }
-.green{
-    background-color: green;
+.blue{
+    background-color: cornflowerblue;
     
+}
+
+.soma{
+    background-color: #D6F599;
 }
 .purple{
     background-color: rgb(134, 75, 134);
@@ -267,7 +277,7 @@ input[type=submit]:hover {
     height: 100%;
     width: 15%;
     position: fixed;
-    z-index: -1;  
+    z-index: 1;  
     top: 10%;
     left: 0;
     background-color: rgba(17, 17, 17, 0.671);
@@ -275,6 +285,7 @@ input[type=submit]:hover {
     padding-top: 20px;
     font-family: "Bad script";
 }
+
 .sidenav a{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -441,8 +452,8 @@ input[type=submit]:hover {
 .container {
     padding: 10px 40px;
     position: relative;
-    background-color: inherit;
-    width: 45%;
+    background-color: inherit;    
+    width: 43%;
 }
 
 /* The circles on the timeline */
@@ -505,18 +516,40 @@ input[type=submit]:hover {
 /* The actual content */
 .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: #D6F599;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     border-radius: 6px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
-
+/* buttons*/
 .btn {
     border: none; /* Remove borders */
     color: white; /* Add a text color */
     padding: 10px; /* Add some padding */
     cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
+round{
+    border-radius: 30%;
+}
+.water{background-color: dodgerblue}
+.status{background-color: fuchsia}
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
 .pending{
 	background-color:green;
 }
